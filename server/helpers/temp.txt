@@ -1,8 +1,0 @@
-   let ball = scorebook.currentOver - parseInt(scorebook.currentOver);
-      scorebook.overs[parseInt(scorebook.currentOver)] = {
-        ball: {
-          run,
-          batsman,
-          bowler,
-        },
-      };

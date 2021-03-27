@@ -63,7 +63,7 @@ const ScoreBook = () => {
         }
       )
       .then((res) => {
-        setUrl(`http://localhost:3000/${params.id}/${res.data._id}`);
+        setUrl(`http://localhost:3002/${params.id}/${res.data._id}`);
         setLoad(true);
         localStorage.setItem("session", res.data._id);
         database.ref(`${res.data._id}`).set(res.data.match);
