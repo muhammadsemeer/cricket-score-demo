@@ -1,8 +1,17 @@
 import { Grid, ButtonGroup, Button } from "@material-ui/core";
+import { useState } from "react";
 import { useStyles } from "./panelStyles";
+import { SayAWord } from "./SayAWord";
 
 export const MainRight = () => {
-    const classes = useStyles()
+  const classes = useStyles();
+  const [openDialog, setOpenDialog] = useState(false);
+  const opentheDialog = () => {
+    setOpenDialog(true)
+  }
+  const closeDialog = () => {
+    setOpenDialog(false)
+  }
   return (
     <>
       <Grid item xs={6} className={classes.gridItems}>
@@ -45,9 +54,9 @@ export const MainRight = () => {
             Projected Score
           </Button>
           <Button className={classes.btnWidth169} variant="contained">
-            serires Sixes
+            Series Sixes
           </Button>
-          <Button className={classes.btnWidth169} variant="contained">
+          <Button className={classes.btnWidth169} onClick={opentheDialog} variant="contained">
             Say Word (WOW)
           </Button>
         </ButtonGroup>
@@ -78,6 +87,7 @@ export const MainRight = () => {
           Macth Summary
         </Button>
       </Grid>
+      {openDialog ? <SayAWord open={openDialog} close={closeDialog} /> : null}
     </>
   );
 };

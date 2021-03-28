@@ -6,7 +6,7 @@ export const Stat = () => {
   return (
     <>
       <Grid item xs={12} className={classes.gridItems}>
-        <Button variant="conatined" className={classes.infoBtn} disabled>
+        <Button variant="contained" className={classes.infoBtn} disabled>
           Statistics
         </Button>
         <ButtonGroup

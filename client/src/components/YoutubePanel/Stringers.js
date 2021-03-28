@@ -6,7 +6,7 @@ export const Stringers = () => {
   return (
     <>
       <Grid item xs={12} className={classes.gridItems}>
-        <Button variant="conatined" className={classes.infoBtn} disabled>
+        <Button variant="contained" className={classes.infoBtn} disabled>
           Stingers
         </Button>
         <ButtonGroup
