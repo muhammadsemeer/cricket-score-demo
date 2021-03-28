@@ -45,7 +45,7 @@ export const SayAWord = ({ open, close }) => {
                 {...params}
                 label="Pick One or Enter"
                 margin="normal"
-                variant="outlined"
+                value={word}
                 onChange={handleChange}
               />
             )}

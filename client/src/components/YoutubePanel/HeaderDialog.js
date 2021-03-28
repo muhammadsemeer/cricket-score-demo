@@ -16,7 +16,7 @@ export const HeaderDialog = ({ open, close }) => {
   return (
     <>
       <Dialog open={open} onClose={close} fullWidth>
-        <DialogTitle>Enter Full Screen Word</DialogTitle>
+        <DialogTitle>Enter Title Header & Sub Header</DialogTitle>
         <DialogContent>
           <TextField
             name="header"
