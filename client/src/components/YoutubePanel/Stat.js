@@ -1,8 +1,17 @@
 import { Button, ButtonGroup, Grid } from "@material-ui/core";
+import { useState } from "react";
+import { HeaderDialog } from "./HeaderDialog";
 import { useStyles } from "./panelStyles";
 
 export const Stat = () => {
   const classes = useStyles();
+  const [dialog, setDialog] = useState(false);
+  const openDialog = () => {
+    setDialog(true);
+  };
+  const closeDialog = () => {
+    setDialog(false);
+  };
   return (
     <>
       <Grid item xs={12} className={classes.gridItems}>
@@ -21,14 +30,19 @@ export const Stat = () => {
           <Button variant="contained">Tour Data</Button>
         </ButtonGroup>
         <ButtonGroup className={classes.btnGrp}>
-          <Button variant="contained" className={classes.fullWidthHeight50}>
+          <Button
+            variant="contained"
+            onClick={openDialog}
+            className={classes.fullWidthHeight50}
+          >
             Title Header - Sub Header
           </Button>
           <Button variant="contained" className={classes.fullWidthHeight50}>
-            Title SubHeader
+            Title Sub Header Scrollable
           </Button>
         </ButtonGroup>
       </Grid>
+      {dialog ? <HeaderDialog open={dialog} close={closeDialog} /> : null}
     </>
   );
 };
