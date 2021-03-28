@@ -27,7 +27,7 @@ export const MainLeft = () => {
           </Button>
         </ButtonGroup>
         <FormControl className={classes.btnWidthHeight50}>
-          <InputLabel id="demo-simple-select-label">Age</InputLabel>
+          <InputLabel id="demo-simple-select-label">Select</InputLabel>
           <Select
             labelId="demo-simple-select-label"
             id="demo-simple-select"
@@ -40,7 +40,7 @@ export const MainLeft = () => {
         </FormControl>
         <TextField
           id="standard-multiline-flexible"
-          label="Multiline"
+          label="Enter Here"
           multiline
           rowsMax={4}
           style={{ width: "35%" }}
