@@ -22,7 +22,7 @@ export const Stat = () => {
         </ButtonGroup>
         <ButtonGroup className={classes.btnGrp}>
           <Button variant="contained" className={classes.fullWidthHeight50}>
-            Title Header
+            Title Header - Sub Header
           </Button>
           <Button variant="contained" className={classes.fullWidthHeight50}>
             Title SubHeader
