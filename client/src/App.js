@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import NewMatch from "./components/CreateNewMatch/NewMatch";
 import ScoreBook from "./components/Scorebook/ScoreBook";
 import axios from "axios";
+import { Ytpanel } from "./components/YoutubePanel/Ytpanel";
 axios.defaults.baseURL = "http://localhost:3001";
 
 function App() {
@@ -20,6 +21,9 @@ function App() {
           </Route>
           <Route path="/scorebook/:id">
             <ScoreBook />
+          </Route>
+          <Route path="/youtube-panel">
+            <Ytpanel />
           </Route>
         </Switch>
       </Router>
