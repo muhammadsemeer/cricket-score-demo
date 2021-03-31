@@ -1,41 +1,16 @@
-import { useEffect, useState } from "react";
-import { useHistory, useParams } from "react-router";
-import firebase from "../../firebase/config";
-import "firebase/database";
-import axios from "axios";
-const database = firebase.database();
+import Score from "../score/Score";
+
+const themes = {
+  teamName: "/assets/theme/cricket_006_new_main_header.png",
+  scoreHeader: "/assets/theme/cricket_006_new_header1.png",
+  scoreFooter: "/assets/theme/scorefooter.png",
+};
 
 const Overlay = () => {
-  const { id, session } = useParams();
-  const [score, setScore] = useState();
-  const history = useHistory();
-  useEffect(() => {
-    axios
-      .post(
-        "/overlay/valid",
-        {
-          id,
-          session,
-        },
-        {
-          withCredentials: true,
-        }
-      )
-      .then((res) => {
-        const ref = database.ref(`${session}`);
-        ref.on("value", (snapshot) => {
-          setScore(snapshot.val());
-        });
-      })
-      .catch((err) => {
-        history.push("/404");
-      });
-  }, [id, history, session]);
   return (
-    <div>
-      <h1>Overlay</h1>
-      <h2>{score ? score.scoreboard.total : 0}</h2>
-    </div>
+    <>
+      <Score theme={themes} />
+    </>
   );
 };
 
