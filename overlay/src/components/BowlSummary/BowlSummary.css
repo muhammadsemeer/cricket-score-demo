@@ -1,0 +1,125 @@
+.bowl-sum {
+  width: 90%;
+  margin: 50px auto;
+}
+
+.bowl-sum .header,
+.bowl-sum .sub-header,
+.bowl-sum .bowlers,
+.bowl-sum .fall-wickets .top,
+.bowl-sum .fall-wickets .bottom,
+.bowl-sum .footer {
+  width: 100%;
+  background-size: 100% 100%;
+}
+
+.bowl-sum .header,
+.bowl-sum .footer {
+  height: 100px;
+}
+
+.bowl-sum .header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 20px;
+}
+
+.bowl-sum .header .left {
+  color: #2121c7;
+}
+
+.bowl-sum .header .right {
+  color: #fff;
+}
+
+.bowl-sum .sub-header,
+.bowl-sum .bowlers,
+.bowl-sum .fall-wickets .top,
+.bowl-sum .fall-wickets .bottom {
+  width: 100%;
+  height: 75px;
+  color: #2121c7;
+}
+
+.bowl-sum .sub-header,
+.bowl-sum .bowlers {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  font-size: 28px;
+}
+
+.bowl-sum .sub-header span:first-child,
+.bowl-sum .bowlers span:first-child {
+  width: 350px;
+  text-align: center;
+}
+
+.bowl-sum .bowlers span:not(:nth-child(1)) {
+  color: #fff;
+}
+
+.bowl-sum .footer {
+  width: 90%;
+  position: absolute;
+  bottom: 230px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 36px;
+}
+
+.bowl-sum .footer .left {
+  width: 80%;
+  display: flex;
+  color: #2121c7;
+}
+
+.bowl-sum .footer .right {
+  color: #fff;
+}
+
+.bowl-sum .footer .left > span {
+  margin: 0 20px;
+}
+
+.bowl-sum .fall-wickets {
+  position: absolute;
+  width: 90%;
+  bottom: 330px;
+}
+
+.bowl-sum .fall-wickets .top,
+.bowl-sum .fall-wickets .bottom {
+  display: flex;
+  font-size: 28px;
+  align-items: center;
+}
+
+.bowl-sum .fall-wickets .top .title {
+  width: 30%;
+  text-align: center;
+}
+
+.bowl-sum .fall-wickets .top .wickets {
+  display: flex;
+}
+
+.bowl-sum .fall-wickets .bottom .runs {
+  display: flex;
+  width: 70%;
+  margin-left: auto;
+}
+
+.bowl-sum .fall-wickets .top .wickets > span,
+.bowl-sum .fall-wickets .bottom .runs > span {
+  width: 75px;
+  height: 75px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 5px solid #ababab;
+  border-top: none;
+  border-bottom: none;
+}
