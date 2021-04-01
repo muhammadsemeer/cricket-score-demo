@@ -8,7 +8,7 @@
   display: flex;
 }
 
-.team {
+.score .team {
   width: 40%;
   height: 50px;
   background-size: 100% 100%;
@@ -19,24 +19,24 @@
   font-weight: bold;
 }
 
-.team-name {
+.score .team-name {
   width: 60%;
   text-align: right;
   padding-right: 25px;
 }
 
-.team-score {
+.score .team-score {
   width: 30%;
   text-align: center;
   color: #2121c7;
 }
 
-.team-over {
+.score .team-over {
   width: 10%;
   text-align: center;
 }
 
-.team-header {
+.score .team-header {
   width: 60%;
   height: 50px;
   background-size: 100% 100%;
@@ -63,7 +63,7 @@
   margin: 0 10px;
 }
 
-.over .ball {
+.score .over .ball {
   width: 50px;
   height: 50px;
   background-color: #444;
@@ -74,6 +74,6 @@
   justify-content: center;
 }
 
-.over .ball.extra {
+.score .over .ball.extra {
   background-color: #2121c7;
 }
