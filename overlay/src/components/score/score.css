@@ -4,7 +4,7 @@
   bottom: 0;
 }
 
-.top {
+.score .top {
   display: flex;
 }
 
@@ -48,7 +48,7 @@
   font-weight: 600;
 }
 
-.bottom {
+.score .bottom {
   width: 100%;
   height: 60px;
   display: flex;
@@ -59,7 +59,7 @@
   color: #2121c7;
 }
 
-.bottom div span {
+.score .bottom div span {
   margin: 0 10px;
 }
 

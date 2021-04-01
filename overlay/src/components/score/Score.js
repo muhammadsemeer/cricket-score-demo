@@ -5,14 +5,14 @@ const Score = ({ theme }) => {
   return (
     <div className="score">
       <div className="top">
-        <div className="team" style={{ backgroundImage: `url(${teamName})` }}>
+        <div className="team" style={{ backgroundImage: `url("${teamName}")` }}>
           <span className="team-name">RCB</span>
           <span className="team-score">10 - 0</span>
           <span className="team-over">1.2</span>
         </div>
         <div
           className="team-header"
-          style={{ backgroundImage: `url(${scoreHeader})` }}
+          style={{ backgroundImage: `url("${scoreHeader}")` }}
         >
           <span className="header-text1">IPL 2021</span>
           <span className="header-text2">1ST INN</span>
@@ -20,7 +20,7 @@ const Score = ({ theme }) => {
       </div>
       <div
         className="bottom"
-        style={{ backgroundImage: `url(${scoreFooter})` }}
+        style={{ backgroundImage: `url("${scoreFooter}")` }}
       >
         <div className="batsman">
           <span className="name">Kohli</span>
