@@ -1,6 +1,7 @@
 import BatSummary from "../BatSummary/BatSummary";
 import BowlSummary from "../BowlSummary/BowlSummary";
 import MatchSummary from "../MatchSummary/MatchSummary";
+import NeedSM from "../NeedSM/NeedSM";
 import Score from "../score/Score";
 import Verses from "../Verses/Verses";
 
