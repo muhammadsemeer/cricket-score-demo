@@ -1,9 +1,9 @@
-import BatSummary from "../BatSummary/BatSummary";
-import BowlSummary from "../BowlSummary/BowlSummary";
-import MatchSummary from "../MatchSummary/MatchSummary";
-import NeedSM from "../NeedSM/NeedSM";
-import Score from "../score/Score";
-import Verses from "../Verses/Verses";
+import BatSummary from "../../components/BatSummary/BatSummary";
+import BowlSummary from "../../components/BowlSummary/BowlSummary";
+import MatchSummary from "../../components/MatchSummary/MatchSummary";
+import NeedSM from "../../components/NeedSM/NeedSM";
+import Score from "../../components/score/Score";
+import Verses from "../../components/Verses/Verses";
 
 const themes = {
   teamName: "/assets/theme/cricket_006_new_main_header.png",

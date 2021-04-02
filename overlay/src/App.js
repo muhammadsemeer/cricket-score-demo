@@ -1,5 +1,5 @@
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import Overlay from "./components/overlay/Overlay";
+import Overlay from "./pages/Demo/Overlay";
 import axios from "axios";
 axios.defaults.baseURL = "http://localhost:3001";
 
