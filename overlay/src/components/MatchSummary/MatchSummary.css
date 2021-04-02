@@ -1,0 +1,76 @@
+.match-summary {
+  width: 90%;
+  height: 100vh;
+  margin: 25px auto;
+}
+
+.match-summary .header {
+  background-size: 100% 100%;
+  display: flex;
+  height: 100px;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  font-size: 36px;
+  color: #2121c7;
+}
+
+.match-summary .header .tour {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  letter-spacing: 2px;
+}
+
+.match-summary .header .tour .head {
+  font-weight: bold;
+}
+
+.match-summary .inn {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+  height: 400px;
+  font-size: 32px;
+}
+
+.match-summary .inn .team,
+.match-summary .inn .row {
+  background-size: 100% 100%;
+  width: 90%;
+  height: 65px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.match-summary .inn .team .name {
+  width: calc(100% / 3);
+}
+
+.match-summary .inn .team > div:not(:last-child) {
+  color: #fff;
+}
+.match-summary .inn .team > div:last-child {
+  color: #2121c7;
+}
+
+.match-summary .inn .row div {
+  display: flex;
+  justify-content: space-around;
+  width: 50%;
+  color: #2121c7;
+}
+
+.match-summary .footer {
+  background-size: 100% 100%;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 32px;
+  color: #fff;
+}

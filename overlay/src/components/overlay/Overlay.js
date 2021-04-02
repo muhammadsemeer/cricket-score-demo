@@ -1,5 +1,6 @@
 import BatSummary from "../BatSummary/BatSummary";
 import BowlSummary from "../BowlSummary/BowlSummary";
+import MatchSummary from "../MatchSummary/MatchSummary";
 import Score from "../score/Score";
 import Verses from "../Verses/Verses";
 
@@ -16,6 +17,7 @@ const themes = {
   battingSummaryFooter: "/assets/theme/batting_summary_footer.png",
   bowlingSummaryNoHeader: "/assets/theme/bowling_summary_noheader.png",
   bowlingSummary: "/assets/theme/bowling_summary_1.png",
+  matchSummaryFooter: "/assets/theme/wagon_wheel_versus.png",
 };
 
 const Overlay = () => {
