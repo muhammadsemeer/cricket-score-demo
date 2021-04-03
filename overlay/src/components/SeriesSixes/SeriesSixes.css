@@ -1,0 +1,22 @@
+.series-sixes {
+  background-size: 100% 100%;
+  width: 1000px;
+  height: 150px;
+  position: absolute;
+  bottom: 100px;
+  left: 100px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 52px;
+  padding-bottom: 17px;
+  font-weight: bold;
+}
+
+.series-sixes .title {
+  color: #fff;
+}
+
+.series-sixes .sixes {
+  color: #2121c7;
+}
